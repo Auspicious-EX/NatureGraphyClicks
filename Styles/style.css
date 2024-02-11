@@ -1,75 +1,94 @@
-* {
+/* Navbar */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: aliceblue;
+    background-color: #f4f4f4; /* Adjust background color as needed */
+    
 }
 
-.nav-bg {
+nav {
+    background-color: #ffffff;
+    color: #0c0c0c;
+    padding: 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background: #ffffff;
-}
-
-li, a, button {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
+    border-radius: 51px;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow:  20px 20px 60px #bebebe,
+         -20px -20px 60px #ffffff;
 }
 
 .nav-logo {
     display: flex;
 }
 
-.logo-img {
-    cursor: pointer;
-    height: 50px;
+nav img {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;
+    margin-left:  5px;
 }
 
-.logo-text {
-    cursor: pointer;
-    margin-top: 10px;
-    height: 30px;
-}
-
-.nav_option {
-    list-style: none;
-}
-
-.nav_option li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav_option li a {
-    transition: all 0.3s ease 0s;
-    color: #10002B;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-
-.nav_option li a:hover {
-    color: #7B2CBF;
-}
-
-.cta-buttons {
+nav div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    
 }
 
-.cta {
-    margin-left: 10px;
+nav div ul li {
+    margin-right: 20px;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: #7B2CBF;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+nav div ul li a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+
+
+#navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 30px; /* Optional: Add rounded corners */
+    transition: background-color 0.4s ease; /* Smooth transition */
+}
+
+/* hover ness for Navbar manu*/
+#navbar-menu li a:hover {
+    background-color: #eaeaea;/* Change to the desired hover color */
+
+}
+
+#login-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#login-section ul li {
+    margin-right: 10px;
+}
+
+#login-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 16px; /* Adjust padding as needed */
+    background-color: #5A189A; /* Background color for the buttons */
+    border-radius: 20px; /* Optional: Add rounded corners */
+}
+/* hover ness for Login manu*/
+#login-section ul li a:hover {
+    background-color: #9D4EDD; /* Background color for the buttons */
+    color: #ffffff;
 }
